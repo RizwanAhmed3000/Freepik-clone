@@ -10,8 +10,27 @@
     color: white;
 }
 .textAndSearch{
-    padding: 70px 0px 40px 0px;
+    padding: 70px 0px 0px 0px;
 }
 .text h1{
     margin-bottom: 12px;
+}
+#inputPadding{
+    padding: 14px;
+}
+.containerWidth{
+    width: 65%;
+}
+.form-control:focus{
+    outline: none !important;
+}
+.suggestions p{
+    margin: 0px 8px;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 3px;
+    background-color: #c1c1ff4f;
+}
+.suggestions p i{
+    margin: 0px 10px 0px 0px;
 }

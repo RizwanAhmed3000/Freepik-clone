@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/96a2384ef6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/96a2384ef6.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -85,18 +87,35 @@
         </div>
     </nav>
     <div class="hero">
-        <div class="container textAndSearch d-flex justify-content-center flex-column">
+        <div class="container textAndSearch d-flex justify-content-center flex-column align-items-center">
             <div class="text">
-                <h1 class="text-center"<b>All the assets you need, in one place</b></h1>
-                <p class="text-center fs-4 fw-light">Find and download the best high-quality photos, designs, and mockups</p>
+                <h2 class="text-center" <b>All the assets you need, in one place</b></h2>
+                <p class="text-center fs-5 fw-light">Find and download the best high-quality photos, designs, and
+                    mockups</p>
             </div>
-            <div class="input-group">
-                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-                <span class="input-group-text">$</span>
-                <!-- <span class="input-group-text">0.00</span> -->
-              </div>
+            <div class="container justify-content-center align-items-center d-flex">
+                <div class="input-group mb-3 containerWidth">
+                    <button class="btn btn-outline-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">Assets</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <input type="text" class="form-control" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; background-color: white; border: none;" aria-label="Text input with dropdown button" id="inputPadding">
+                    <span class="input-group-text" id="basic-addon2" style="background-color: white; border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-top-right-radius: 3px; border-bottom-right-radius: 3px;"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
+
         </div>
-        <div class="container suggestions"></div>
+        <div class="container suggestions d-flex justify-content-center">
+            <p><i class="fa-solid fa-magnifying-glass"></i>Background</p>
+            <p><i class="fa-solid fa-magnifying-glass"></i>Logo mockup</p>
+            <p><i class="fa-solid fa-magnifying-glass"></i>Flyer</p>
+        </div>
         <div class="category"></div>
 
     </div>
