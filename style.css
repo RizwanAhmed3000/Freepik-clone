@@ -1,0 +1,17 @@
+#navbarNavDropdown ul li a{
+    color: white !important;
+    font-size: 14px !important;
+}
+#sellContent{
+    margin-left: 350px;
+}
+.hero{
+    background-image: linear-gradient(180deg, #2d2db0 -65%, #2c8cf4 110%);
+    color: white;
+}
+.textAndSearch{
+    padding: 70px 0px 40px 0px;
+}
+.text h1{
+    margin-bottom: 12px;
+}
