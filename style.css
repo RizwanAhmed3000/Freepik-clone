@@ -10,7 +10,7 @@
     color: white;
 }
 .textAndSearch{
-    padding: 70px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 .text h1{
     margin-bottom: 12px;
@@ -34,3 +34,46 @@
 .suggestions p i{
     margin: 0px 10px 0px 0px;
 }
+.flexReverse a#logo{
+    display: block;
+}
+.logIn{
+    display: none;
+}
+.freepikLogo{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .flexReverse{
+        flex-direction: row-reverse !important;
+    }
+    #sellContent{
+        margin-left: 0px;
+    }
+    #navbarNavDropdown ul li a{
+        color: #a5b7bc;
+    }
+    .flexReverse a#logo{
+        display: none;
+    }
+    .logIn{
+        display: block;
+        margin: 0px 10px;
+        color: white;
+    }
+    .signUp{
+        border: 1px solid white;
+        padding: 3px 8px;
+        border-radius: 3px;
+    }
+    .offLogIn{
+        display: none;
+    }
+    .freepikLogo{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+}
+ 

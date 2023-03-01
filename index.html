@@ -17,9 +17,9 @@
 
     <!-- navBar  -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"
+    <!-- <nav class="navbar navbar-expand-xl bg-body-tertiary"
         style="background-color: #2D53CB !important; padding-top: 0px; padding-bottom: 0px; height: 70px;">
-        <div class="container-fluid align-items-baseline">
+        <div class="container-fluid align-items-baseline flexReverse">
             <a class="navbar-brand" href="#" style="margin-right: 45px;" ;"><img src="assets/logo-removebg-preview.png"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -85,9 +85,100 @@
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-xl bg-body-tertiary"
+        style="background-color: #2D53CB !important; padding-top: 0px; padding-bottom: 0px; height: 70px;">
+        <div class="container-fluid flexReverse">
+            <a class="navbar-brand" id="logo" href="#" style="margin-right: 45px;"><img src="assets/logo-removebg-preview.png"
+                    alt=""></a>
+            <ul class="navbar-nav d-flex flex-row align-items-baseline">
+                <li class="nav-item">
+                    <a class="nav-link logIn" href="#"><b>Log in</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link logIn signUp" href="#"><b>Sign up</b></a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #1D262D;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: white;">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="navbarNavDropdown">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Vectors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PSD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">3D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fonts</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Collections</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item " id="sellContent">
+                            <a class="nav-link " href="#">Sell content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link offLogIn" href="#"><b>Log in</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link offLogIn" href="#"><b>Sign up</b></a>
+                        </li>
+
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
+
+    <!-- heroPart -->
+
     <div class="hero">
         <div class="container textAndSearch d-flex justify-content-center flex-column align-items-center">
+            <div class="freepikLogo">
+                <img src="assets/logo-removebg-preview.png" alt="">
+            </div>
             <div class="text">
                 <h2 class="text-center" <b>All the assets you need, in one place</b></h2>
                 <p class="text-center fs-5 fw-light">Find and download the best high-quality photos, designs, and
@@ -95,7 +186,9 @@
             </div>
             <div class="container justify-content-center align-items-center d-flex">
                 <div class="input-group mb-3 containerWidth">
-                    <button class="btn btn-outline-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">Assets</button>
+                    <button class="btn btn-outline-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="background-color: white; border: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px;">Assets</button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -105,8 +198,12 @@
                         </li>
                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul>
-                    <input type="text" class="form-control" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; background-color: white; border: none;" aria-label="Text input with dropdown button" id="inputPadding">
-                    <span class="input-group-text" id="basic-addon2" style="background-color: white; border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-top-right-radius: 3px; border-bottom-right-radius: 3px;"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control"
+                        style="border-top-left-radius: 0px; border-bottom-left-radius: 0px; background-color: white; border: none;"
+                        aria-label="Text input with dropdown button" id="inputPadding">
+                    <span class="input-group-text" id="basic-addon2"
+                        style="background-color: white; border: none; border-top-left-radius: 0px; border-bottom-left-radius: 0px; border-top-right-radius: 3px; border-bottom-right-radius: 3px;"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
             </div>
 
@@ -116,7 +213,9 @@
             <p><i class="fa-solid fa-magnifying-glass"></i>Logo mockup</p>
             <p><i class="fa-solid fa-magnifying-glass"></i>Flyer</p>
         </div>
-        <div class="category"></div>
+        <div class="category">
+            
+        </div>
 
     </div>
 
